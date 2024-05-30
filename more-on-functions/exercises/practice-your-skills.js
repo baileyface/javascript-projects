@@ -13,3 +13,15 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+
+let tripledPirate = arr.map(function (myArg) {
+    if (typeof myArg === "number") {
+        return myArg * 3;
+    } else if (typeof myArg === "string") {
+        return "ARRRRR!";
+    } else {
+        return myArg;
+    }
+});
+console.log(tripledPirate);
